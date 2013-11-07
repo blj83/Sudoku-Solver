@@ -1,0 +1,19 @@
+Benjamin Johnson
+
+To compile: make or javac *.java
+
+To run: make run or java SudokuSolver
+
+
+Time Complexity Write-up:
+	
+	The algorithm for this program is a recursive backtracking algorithm. Which
+means it calls a method that will call itself recursively and when there is no possible 
+answers it will backtrack and go back and try the next possible value for the previous
+element. The best case for this algorithm is that it finds a solution the first time
+through and does not back track at all. The time complexity for the best case would be 
+O(n). The worst case for the algoritm is that it would have to backtrack through every
+possible solution and the very last possiblity tried is the solution to the puzzle. The
+time complexity of this algorithm is O(n^n). The problem size of the SudokuSolver 
+algorithm is a 9x9 board, so the worst case time complexity would be 81^81. The average 
+time complexity of the algorithm would then be O(n^(n/2)).
